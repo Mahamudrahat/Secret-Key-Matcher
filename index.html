@@ -10,7 +10,7 @@
     <div class="container">
         <section class="generate-secret-key">
             <button class="generate-btn" id="generate-btn">Generate Secret Key</button>
-            <input type="text" id="generated-password" name="" class="password-display" value="****" disabled ><br><br>
+            <input type="text" id="generated-password" name="" class="password-display" value="******" disabled ><br><br>
         </section>
         <section class="input-match">
             <div class="input-pin-section">
@@ -32,11 +32,12 @@
                 <button class="key2" id="clear-btn">Clear</button>
                 <button id="submit-btn" class="submit-btn">Submit</button>
             </div>
+            
             <div id="message"></div>
         </section>
     </div>
-<script>
-    document.addEventListener('DOMContentLoaded',()=>{
+    <script>
+       document.addEventListener('DOMContentLoaded',()=>{
            const generateBtn=document.getElementById('generate-btn');
            const generateSecretKey=document.getElementById('generated-password');
            const inputDisplay=document.getElementById('input-display');
@@ -51,6 +52,7 @@
            (Math.random() * (900000 - 100000 + 1)) + 100000).toString();
            generateSecretKey.value=generatedPassword;
         });
+
         keypad.addEventListener('click',function(event){
             
             if(event.target.classList.contains('key')){
@@ -71,7 +73,17 @@
                 inputDisplay.textContent = inputPassword;
             
         });
-    });
-</script>
+       submitBtn.addEventListener('click',function(){
+        if(inputPassword==generatedPassword){
+            message.innerHTML='<span style="color:green;">Success! &#x2714;<span>'
+        }else {
+            message.innerHTML = '<span style="color: red;">Error! &#x2716;</span>';
+        }
+       });
+
+       });
+      
+
+    </script>
 </body>
 </html>
