@@ -35,6 +35,24 @@
             <div id="message"></div>
         </section>
     </div>
+<script>
+    document.addEventListener('DOMContentLoaded',()=>{
+           const generateBtn=document.getElementById('generate-btn');
+           const generateSecretKey=document.getElementById('generated-password');
+           const inputDisplay=document.getElementById('input-display');
+           const keypad=document.getElementById('keypad')
+           const submitBtn=document.getElementById('submit-btn');
+           const message=document.getElementById('message');
+           let generatedPassword='';
+           let inputPassword='';
 
+           generateBtn.addEventListener('click',()=>{
+           generatedPassword= (Math.floor
+           (Math.random() * (900000 - 100000 + 1)) + 100000).toString();
+           generateSecretKey.value=generatedPassword;
+        });
+        
+    });
+</script>
 </body>
 </html>

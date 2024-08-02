@@ -55,3 +55,143 @@ body{
     background: slategray;
     width: 600px;
 }
+
+.input-pin-section{
+    display: grid;
+    grid-template-columns: repeat(2,140px);
+    grid-gap: 10px;
+    margin: 20px;
+    width:300 px;
+}
+
+.enter-password-display {
+width: 150px;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 18px;
+border: 1px solid #ccc;
+}
+
+h2{
+color: white;
+width: 150px;
+
+}
+
+.keypad {
+display: grid;
+grid-template-columns: repeat(4, 70px);
+grid-gap: 10px;
+margin-bottom: 20px;
+width:300;
+}
+
+.key {
+width: 70px;
+height: 40px;
+font-size: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(44, 132, 136);
+border: 1px solid #ccc;
+cursor: pointer;
+border-radius: 5px;
+color:white;
+transition: background-color 0.3s;
+}
+
+.key1 {
+width: 70px;
+height: 40px;
+font-size: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: orange;
+border: 1px solid #ccc;
+cursor: pointer;
+border-radius: 5px;
+color:white;
+transition: background-color 0.3s;
+}
+
+.key2 {
+width: 70px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 18px;
+background-color: rgb(230, 33, 33);
+border: 1px solid #ccc;
+cursor: pointer;
+border-radius: 5px;
+color:white;
+transition: background-color 0.3s;
+}
+.submit-btn{
+width: 70px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 18px;
+background-color: green;
+border: 1px solid #ccc;
+cursor: pointer;
+border-radius: 5px;
+color:white;
+transition: background-color 0.3s;
+}
+
+#message {
+margin-top: 10px;
+font-size: 18px;
+}
+
+
+@media (min-width: 600px) {
+.keypad {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media (max-width: 599px) and (min-width: 400px) {
+.keypad {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (max-width: 399px) {
+.keypad {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+@media (min-width: 600px) {
+.input-pin-section {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 599px) and (min-width: 400px) {
+.input-pin-section {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 399px) {
+.input-pin-section {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+@media (max-width: 1000px) {
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+}
