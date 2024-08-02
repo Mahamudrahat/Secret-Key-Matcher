@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Matcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="generate-secret-key">
+            <button class="generate-btn" id="generate-btn">Generate Secret Key</button>
+            <input type="text" id="generated-password" name="" class="password-display" value="****" disabled ><br><br>
+        </section>
+        <section class="input-match">
+            <div class="input-pin-section">
+            <h2>Enter PIN:</h2>
+            <div id="input-display" class="enter-password-display"></div>
+        </div>
+            <div class="keypad" id="keypad">
+                <button class="key" data-key="1">1</button>
+                <button class="key" data-key="2">2</button>
+                <button class="key" data-key="3">3</button>
+                <button class="key" data-key="4">4</button>
+                <button class="key" data-key="5">5</button>
+                <button class="key" data-key="6">6</button>
+                <button class="key" data-key="7">7</button>
+                <button class="key" data-key="8">8</button>
+                <button class="key" data-key="9">9</button>
+                <button class="key" data-key="0">0</button>
+                <button class="key1" id="backspace-btn">X</button>
+                <button class="key2" id="clear-btn">Clear</button>
+                <button id="submit-btn" class="submit-btn">Submit</button>
+            </div>
+            <div id="message"></div>
+        </section>
+    </div>
+
+</body>
+</html>
