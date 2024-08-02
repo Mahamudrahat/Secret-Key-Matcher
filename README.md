@@ -1,5 +1,8 @@
-### 1.What is ES6 and what are the new features introduced in ES6?
-### ANswer:ES6 (ECMAScript 2015) is the sixth edition of the ECMAScript language specification, standardized by ECMA International. It introduced several new features to JavaScript, aiming to make the language more powerful and easier to work with. Some of the key features include:
+# 1.What is ES6 and what are the new features introduced in ES6?
+
+### ES6 (ECMAScript 2015) is the sixth edition of the ECMAScript language specification, standardized by ECMA International. It introduced several new features to JavaScript, aiming to make the language more powerful and easier to work with. Some of the key features include:
+
+
 ###	let and const: Block-scoped variable declarations.
 ###	Arrow Functions: A shorter syntax for writing functions and lexically binds the context.
 ###	Template Literals: String literals allowing embedded expressions.
