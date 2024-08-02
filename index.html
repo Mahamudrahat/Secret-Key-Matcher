@@ -51,7 +51,26 @@
            (Math.random() * (900000 - 100000 + 1)) + 100000).toString();
            generateSecretKey.value=generatedPassword;
         });
-        
+        keypad.addEventListener('click',function(event){
+            
+            if(event.target.classList.contains('key')){
+                const key=event.target.getAttribute('data-key');
+                if(key && inputPassword.length < 6){
+                    inputPassword+=key;
+                    
+                }
+            }
+            else if(event.target.id ==='backspace-btn'){
+                    inputPassword=inputPassword.slice(0, -1);
+                    console.log("delete");
+                }
+            else if(event.target.id ==='clear-btn'){
+                    inputPassword = '';
+                }
+    
+                inputDisplay.textContent = inputPassword;
+            
+        });
     });
 </script>
 </body>
